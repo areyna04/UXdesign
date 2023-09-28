@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CrearAlarmaComponent } from './crear-alarma/crear-alarma.component';
+import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    CrearAlarmaComponent,
+    CrearCategoriaComponent
   ],
   imports: [
     BrowserModule,
