@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-crear-alarma',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./crear-alarma.component.css']
 })
 export class CrearAlarmaComponent {
+
+  constructor(private router: Router) { }
+
+  toDashboard() {
+    const rutaDestino = '/dashboard';
+    this.router.navigate([rutaDestino]);
+  }
 
 }
